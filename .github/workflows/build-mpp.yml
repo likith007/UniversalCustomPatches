@@ -26,7 +26,7 @@ jobs:
 
       - name: Build Morphe package
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MORPHE_PACKAGES_TOKEN }}
         run: ./gradlew :patches:buildAndroid --no-daemon
 
       - name: Upload MPP
